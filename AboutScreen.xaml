@@ -1,0 +1,90 @@
+﻿<UserControl x:Class="Tarneeb.AboutScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Tarneeb"
+             mc:Ignorable="d" 
+             d:DesignHeight="750" d:DesignWidth="1200">
+    <Grid Name="gridTable">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/background.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" Width="950" Height="550">
+			
+            <StackPanel>
+				<TextBlock Name="txtCourse"
+						   FontSize="25"
+						   TextWrapping="Wrap"
+						   Foreground="Wheat"
+						   Text="Course Code: OOP 4200 - 02"
+						   Margin="20,10,0,10"
+						   HorizontalAlignment="Center"></TextBlock>
+				<TextBlock Name="txtTitle1"
+						   FontSize="25"
+						   TextWrapping="Wrap"
+						   Foreground="Wheat"
+						   Text="Group 05 Members"
+						   Margin="20,10,0,10"
+						   HorizontalAlignment="Center"></TextBlock>
+				<TextBlock Name="grpMember1"
+						   FontSize="20"
+						   TextWrapping="Wrap"
+						   Foreground="White"
+						   Text="Shruti Patel"
+						   Margin="20,0,0,10"
+						   HorizontalAlignment="Center"></TextBlock>
+				<TextBlock Name="grpMember2"
+						   FontSize="20"
+						   TextWrapping="Wrap"
+						   Foreground="White"
+						   Text="Nima Azadikhah"
+						   Margin="20,0,0,10"
+						   HorizontalAlignment="Center"></TextBlock>
+				<TextBlock Name="grpMember3"
+						   FontSize="20"
+						   TextWrapping="Wrap"
+						   Foreground="White"
+						   Text="Ryan Jordan De Guzman"
+						   Margin="20,0,0,10"
+						   HorizontalAlignment="Center"></TextBlock>
+				<TextBlock Name="grpMember4"
+						   FontSize="20"
+						   TextWrapping="Wrap"
+						   Foreground="White"
+						   Text="Eugene Shin"
+						   Margin="20,0,0,10"
+						   HorizontalAlignment="Center"></TextBlock>
+				<TextBlock Name="grpMember5"
+						   FontSize="20"
+						   TextWrapping="Wrap"
+						   Foreground="White"
+						   Text="Bruce Percy"
+						   Margin="20,0,0,10"
+						   HorizontalAlignment="Center"></TextBlock>
+				<TextBlock Name="grpMember6"
+						   FontSize="20"
+						   TextWrapping="Wrap"
+						   Foreground="White"
+						   Text="Ray Oviasuyi"
+						   Margin="20,0,0,10"
+						   HorizontalAlignment="Center"></TextBlock>
+				<TextBlock Name="grpMember7"
+						   FontSize="20"
+						   TextWrapping="Wrap"
+						   Foreground="White"
+						   Text="Ireoluwa Omotoso"
+						   Margin="20,0,0,10"
+						   HorizontalAlignment="Center"></TextBlock>
+
+				<Button Name="btnBack" Content="Back" Width="150" Height="60" Margin="0,20,0,0" Background="Black" Foreground="Wheat" FontSize="24" ToolTip="Back to Home" Click="btnBack_Click" FontFamily="ROG Fonts">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="15"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
